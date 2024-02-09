@@ -1,0 +1,47 @@
+body {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Pour éviter les barres de défilement */
+    background-color: black; /* Couleur de fond de l'aire de jeu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  
+#ball{
+    position: fixed;
+    width: 64px;
+    height: 64px;
+}
+
+#paddle1 {
+    position: fixed;
+    width: 24px;
+    height: 192px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+
+}
+#paddle2 {
+    position: fixed;
+    width: 24px;
+    height: 192px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.score {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
